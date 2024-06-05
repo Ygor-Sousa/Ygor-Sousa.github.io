@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvador</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nordeste.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-title">DESTINOS INCRÍVEIS</div>
+        <div class="header-home" data-target="../index.html">Home</div>
+    </header>
+    <section class="section-header">
+        <h1>SALVADOR</h1>
+    </section>
+    <div class="content-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 1.jpg" alt="Imagem 1">
+            </div>
+            <div class="grid-item description">
+                Foi a primeira capital do Brasil. Um dos pontos turísticos mais famosos é o Elevador Lacerda, inaugurado em 1873, que conecta a Cidade Alta à Cidade Baixa.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 4.jpg" alt="Imagem 2">
+            </div>
+            <div class="grid-item description">
+                O Pelourinho é o coração histórico de Salvador, sendo reconhecido como Patrimônio Histórico da Humanidade em 1985 pela UNESCO.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 3.jpg" alt="Imagem 3">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 2.jpg" alt="Imagem 4">
+            </div>
+            <div class="grid-item description">
+                Seu Carnaval é uma das maiores festas de rua do mundo, contando com milhões de pessoas todos os anos.
+            </div>
+            <div class="grid-item description">
+                Outro berço da cidade é a capoeira, uma arte marcial afro-brasileira que combina dança, acrobacia e música.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 6.jpg" alt="Imagem 6">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 7.jpg" alt="Imagem 7">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Salvador/Imagem 5.jpg" alt="Imagem 5">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Define as imagens que serão clicáveis
+            const clickableImages = document.querySelectorAll(".header-home[data-target]");
+
+            clickableImages.forEach(image => {
+                image.addEventListener("click", () => {
+                    const targetUrl = image.getAttribute("data-target");
+                    window.location.href = targetUrl;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

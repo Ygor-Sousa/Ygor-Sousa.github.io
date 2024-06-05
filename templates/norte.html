@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Amazonas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/norte.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-title">DESTINOS INCRÍVEIS</div>
+        <div class="header-home" data-target="../index.html">Home</div>
+    </header>
+    <section class="section-header">
+        <h1>TEATRO AMAZONAS</h1>
+    </section>
+    <div class="content-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 1.jpg" alt="Imagem 1">
+            </div>
+            <div class="grid-item description">
+                Inaugurado em 1896, é conhecido pela sua arquitetura neoclássica. Sua fachada é adornada com vários elementos, como colunas gregas, estátuas e detalhes em ferro fundido.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 2.jpg" alt="Imagem 2">
+            </div>
+            <div class="grid-item description">
+                Também é conhecido como “Opera House da Selva”, devido à sua localização na região amazônica e sua reputação como um dos mais importantes teatros de ópera do Brasil.
+            </div>
+            <div class="grid-item description">
+                O ponto focal do teatro é a cúpula em formato de abóbada, revestida com 36 mil peças de cerâmica esmaltada em tons de verde, amarelo e azul.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 4.jpg" alt="Imagem 4">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 5.jpg" alt="Imagem 5">
+            </div>
+            <div class="grid-item description">
+                Muitos materiais usados em sua construção foram importados da Europa, como telhas francesas, ferro belga, mármores italianos e lustres de cristal de Murano.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 6.jpg" alt="Imagem 6">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 7.jpg" alt="Imagem 7">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Teatro_Amazonas/Imagem 3.jpg" alt="Imagem 3">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const clickableImages = document.querySelectorAll(".header-home[data-target]");
+
+            clickableImages.forEach(image => {
+                image.addEventListener("click", () => {
+                    const targetUrl = image.getAttribute("data-target");
+                    window.location.href = targetUrl;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

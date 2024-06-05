@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Botânico de Curitiba</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sul.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-title">DESTINOS INCRÍVEIS</div>
+        <div class="header-home" data-target="../index.html">Home</div>
+    </header>
+    <section class="section-header">
+        <h1>JARDIM BOTÂNICO DE CURITIBA</h1>
+    </section>
+    <div class="content-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 1.jpg" alt="Imagem 1">
+            </div>
+            <div class="grid-item description">
+                A estufa de vidro é o cartão-postal do Jardim Botânico. Foi inspirada no Palácio de Cristal de Londres e abriga plantas tropicais.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 2.jpg" alt="Imagem 2">
+            </div>
+            <div class="grid-item description">
+                O projeto foi desenvolvido pelo arquiteto Abrão Assad, sendo inaugurado em 1991. O espaço contempla uma combinação harmoniosa de jardins, trilhas e áreas de lazer.
+            </div>
+            <div class="grid-item description">
+                Uma das atrações mais interessantes é o Jardim das Sensações, onde os turistas são convidados a explorar o espaço através dos sentidos, como tato, olfato, audição e visão.
+            </div>
+           
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 4.jpg" alt="Imagem 4">
+            </div>
+            <div class="grid-item description">
+                Dentro do complexo, existe um museu sobre botânica, que conta com exposições sobre a flora do Paraná e do Brasil.
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 5.jpg" alt="Imagem 5">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 3.jpg" alt="Imagem 3">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 6.jpg" alt="Imagem 6">
+            </div>
+            <div class="grid-item">
+                <img src="../Imagens/Jardim_Botanico/Imagem 7.jpg" alt="Imagem 7">
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Define as imagens que serão clicáveis
+            const clickableImages = document.querySelectorAll(".header-home[data-target]");
+
+            clickableImages.forEach(image => {
+                image.addEventListener("click", () => {
+                    const targetUrl = image.getAttribute("data-target");
+                    window.location.href = targetUrl;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
